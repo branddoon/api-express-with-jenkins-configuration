@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
 		    sh 'npm init -y'
-		    npm 'install express'
+		    sh 'npm install express'
                     sh 'npm install'
                 }
             }
