@@ -14,6 +14,8 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script {
+		    sh 'npm init -y'
+		    npm 'install express'
                     sh 'npm install'
                 }
             }
